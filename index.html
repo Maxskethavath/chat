@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Chat App</title>
+</head>
+<body>
+    <div id="chat-container" class="max-width center hide">
+        <div id="chat-header" class="bg-green color-white text-center">
+            <h2>
+                <span id="display-name">Welcome my Love</span>
+                (<span id="online-status">Offline</span>)
+                <br>
+                <span id="last-seen">Last seen: </span>
+            </h2>
+        </div>
+        <ul id="messages" class="messages-list"></ul>
+        <div id="input-container" class="flex align-items-top margin-top-10">
+            <input type="file" id="photo-input" accept="image/*" class="input-photo">
+            <input type="text" id="message-input" placeholder="Type your message..." class="input-message">
+            <button id="send-button" onclick="sendMessage()" class="send-button">Send</button>
+            <button id="clear-chat-button" onclick="clearChat()" class="clear-chat-button">Clear Chat</button>
+        </div>
+    </div>
+    <div id="user-input" class="max-width center">
+        <div id="name-input-container" class="input-container">
+            <label for="opponent-name-input">Welcome My Love:</label>
+            <input type="text" id="opponent-name-input">
+            <button onclick="startChat()">lets start</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
